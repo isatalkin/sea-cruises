@@ -1,1 +1,2 @@
-# sea-cruises
+# new-project
+New project template
