@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,194 @@
   <title>New Project</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
 
+  <header class="header">
+
+    <nav class="header__nav  nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="#">Популярные маршруты</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Расписание рейсов</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Забронированные рейсы</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Вход для партнеров</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">О компании</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+
+    <form class="header__settings" action="#">
+      <label class="header__label" for="header__profile">Label</label>
+      <select class="header__select" name="profile" id="header__profile">
+        <option class="header__option" value="profile">Личный кабинет</option>
+        <option class="header__option" value="settings">Настройки</option>
+      </select>
+      <label class="header__label" for="header__currency">Label</label>
+      <select class="header__select" name="" id="header__currency">
+        <option class="header__option" value="ruble">Рубль</option>
+        <option class="header__option" value="dollar">Dollar</option>
+        <option class="header__option" value="euro">Euro</option>
+      </select>
+      <label class="header__label" for="header__language">Label</label>
+      <select class="header__select" name="" id="header__language">
+        <option class="header__option" value="ru">Ru</option>
+        <option class="header__option" value="eng">Eng</option>
+      </select>
+    </form>
+
+    <p class="header__contact  contact">
+      <a class="contact__tel" href="#">8 800 500-61-05</a>
+      <span class="contact__tel-label">Круглосуточная поддержка</span>
+    </p>
+
+    <section class="header__intro">
+      <div class="header__logo">
+        <img src="" alt="">
+      </div>
+      <h1 class="header__title">Морские прогулки по
+        <span>Чёрному морю</span>
+      </h1>
+      <a class="header__button  button" href="#">Выбрать круиз</a>
+    </section>
+
+  </header>
+
+  <main class="main">
+
+    <section class="catalog">
+
+      <h2 class="catalog__title">Каталог круизов</h2>
+
+      <form class="filter" action="#">
+        <label class="filter__label" for="filter__sorting">Сортировать круизы по </label>
+        <select class="filter__select" name="sorting" id="filter__sorting">
+          <option class="filter__option" value="cost">цене</option>
+          <option class="filter__option" value="duration">продолжительности</option>
+        </select>
+      </form>
+
+      <div class="catalog__gallery">
+
+        <div class="catalog__card  card">
+          <b class="card__label">Хит продаж</b>
+          <div class="card__photo">
+            <img src="" alt="">
+          </div>
+          <h3 class="card__title">Морской круиз в Анапу</h3>
+          <p class="card__route">
+            <b>Маршрут:</b> Сочи-Лазаревское-Геленджик-Анапа</p>
+          <p class="card__duration">
+            <b>Продолжительность:</b> 10 ч. 0 мин.</p>
+          <b class="card__price">49 000 руб.</b>
+        </div>
+
+        <div class="catalog__card  card">
+          <b class="card__label">Акция</b>
+          <div class="card__photo">
+            <img src="" alt="">
+          </div>
+          <h3 class="card__title">Обзорная морская прогулка с экскурсией</h3>
+          <p class="card__route">
+            <b>Маршрут:</b> Сочи-Адлер-Сочи (без высадки)</p>
+          <p class="card__duration">
+            <b>Продолжительность:</b> 1 ч. 0 мин.</p>
+          <b class="card__price">5 000 руб.</b>
+          <b class="card__old-price">15000 руб.</b>
+        </div>
+
+        <div class="catalog__card  card">
+          <b class="card__label">скидка 10%</b>
+          <div class="card__photo">
+            <img src="" alt="">
+          </div>
+          <h3 class="card__title">Морская прогулка в Геленджик</h3>
+          <p class="card__route">
+            <b>Маршрут:</b> Сочи-Туапсе-Геленджик</p>
+          <p class="card__duration">
+            <b>Продолжительность:</b> 12 ч. 30 мин.</p>
+          <b class="card__price">7 000 руб.</b>
+          <b class="card__old-price">10000 руб.</b>
+        </div>
+
+        <div class="catalog__card  card">
+          <div class="card__photo">
+            <img src="" alt="">
+          </div>
+          <h3 class="card__title">Морской круиз в Новороссийск</h3>
+          <p class="card__route">
+            <b>Маршрут:</b> Сочи-Геленджик-Новороссйиск-Геленджик-Сочи</p>
+          <p class="card__duration">
+            <b>Продолжительность:</b> 13 ч. 0 мин.</p>
+          <b class="card__price">14 800 руб.</b>
+        </div>
+
+        <div class="catalog__card  card">
+          <div class="card__photo">
+            <img src="" alt="">
+          </div>
+          <h3 class="card__title">Морская прогулка в Абрау-Дюрсо </h3>
+          <p class="card__route">
+            <b>Маршрут:</b> Сочи-Абрау-Дюрсо</p>
+          <p class="card__duration">
+            <b>Продолжительность:</b> 11 ч. 0 мин.</p>
+          <b class="card__price">14 800 руб.</b>
+        </div>
+
+      </div>
+
+      <a class="catalog_button  button" href="#">Больше круизов</a>
+
+    </section>
+
+  </main>
+
+  <footer class="footer">
+
+    <nav class="footer__nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="#">Вход для партнеров</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">О компании</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="footer__social  social">
+      <p class="social__label">Будь на связи:</p>
+      <a class="social__button" href="#">Vk</a>
+      <a class="social__button" href="#">Ok</a>
+      <a class="social__button" href="#">Yt</a>
+      <a class="social__button" href="#">In</a>
+    </div>
+
+    <div class="footer__info">
+      <p class="footer__contact  contact">
+        <a class="contact__tel" href="#">8 800 500-61-05</a>
+        <span class="contact__tel-label">Круглосуточная поддержка</span>
+      </p>
+
+      <p class="footer__copyright">© 2016 OOO «Городские Круизы»</p>
+    </div>
+
+  </footer>
+
 </body>
+
 </html>
