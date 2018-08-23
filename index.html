@@ -142,15 +142,27 @@
         </div>
 
         <div class="catalog__card  card">
-          <div class="card__photo">
-            <img src="" alt="">
+          <div class="card__gallery">
+            <img class="card__photo  popup-card__photo--main" src="#" alt="">
+            <img class="card__photo" src="#" alt="">
+            <img class="card__photo" src="#" alt="">
+            <img class="card__photo" src="#" alt="">
+            <img class="card__photo" src="#" alt="">
           </div>
           <h3 class="card__title">Морская прогулка в Абрау-Дюрсо </h3>
           <p class="card__route">
             <b>Маршрут:</b> Сочи-Абрау-Дюрсо</p>
           <p class="card__duration">
             <b>Продолжительность:</b> 11 ч. 0 мин.</p>
+          <p class="card__shedule">
+            <b>Расписание:</b>
+            <br> Отправление из Сочи: ежедневно в 10:00, 11:40, 13:20, 15:00, 16:40
+            <br> Отправление из Абрау-Дюрсо: ежедневно в 12:25, 14:05, 15:45, 17:25, 19:05
+            <br> Продолжительность: 11 часов 0 мин., из которых 10 часов - морская прогулка (туда и обратно), от 1 часа 30 мин.
+            - свободное время в Ласточкином гнезде
+            <br> Причал отправления/прибытия: набережная Ленина, причал №8, теплоход "Азов"</p>
           <b class="card__price">14 800 руб.</b>
+          <a class="card__button" href="#">Бронирование</a>
         </div>
 
       </div>
@@ -195,6 +207,45 @@
     </div>
 
   </footer>
+
+  <template>
+    <div class="popup">
+      <div class="popup-card">
+
+        <div class="popup-card__gallery">
+          <img class="popup-card__photo  popup-card__photo--big" src="#" alt="">
+          <img class="popup-card__photo" src="#" alt="">
+          <img class="popup-card__photo" src="#" alt="">
+          <img class="popup-card__photo" src="#" alt="">
+          <img class="popup-card__photo" src="#" alt="">
+        </div>
+
+        <div class="popup-card__content">
+
+          <h3 class="popup-card__title"></h3>
+
+          <p class="popup-card__route">
+            <b>Маршрут:</b> Сочи-Геленджик-Новороссйиск-Геленджик-Сочи</p>
+
+          <p class="popup-card__duration">
+            <b>Продолжительность:</b> 13 ч. 0 мин.</p>
+
+          <p class="popup-card__shedule">
+            <b>Расписание:</b>
+            <br> Отправление из Сочи: ежедневно в 10:00, 11:40, 13:20, 15:00, 16:40
+            <br> Отправление из Абрау-Дюрсо: ежедневно в 12:25, 14:05, 15:45, 17:25, 19:05
+            <br> Продолжительность: 11 часов 0 мин., из которых 10 часов - морская прогулка (туда и обратно), от 1 часа 30 мин.
+            - свободное время в Ласточкином гнезде
+            <br> Причал отправления/прибытия: набережная Ленина, причал №8, теплоход "Азов"</p>
+          <b class="popup-card__price">14 800 руб.</b>
+
+          <a class="popup-card__button" href="#">Бронирование</a>
+
+        </div>
+
+      </div>
+    </div>
+  </template>
 
 </body>
 
