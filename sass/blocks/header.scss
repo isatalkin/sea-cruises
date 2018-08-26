@@ -1,8 +1,21 @@
 .header {
+  position: relative;
   @include container;
   background-image: url('../img/header-bg--mobile.jpg');
   background-repeat: no-repeat;
   background-position: center top;
+  &::after {
+    position: absolute;
+    content: '';
+    width: 45px;
+    height: 239px;
+    top: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url('../img/svg-sprite/header-figure.svg');
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
 
   &__nav {
     display: none;
