@@ -1,0 +1,55 @@
+.header {
+  position: relative;
+  @include container;
+  background-image: url('../img/header-bg--mobile.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  &::after {
+    position: absolute;
+    content: '';
+    width: 45px;
+    height: 239px;
+    top: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url('../img/svg-sprite/header-figure.svg');
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+
+  &__nav {
+    display: none;
+  }
+
+  &__settings {
+    display: none;
+  }
+
+  &__contact {
+    display: none;
+  }
+
+  &__intro {
+    padding-top: 26px;
+    padding-bottom: 208px;
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  &__logo {
+    width: 70px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-family: $roboto-slab;
+    @include font (20px, 48px, 400, 1px);
+    text-align: center;
+    margin-bottom: 40px;
+
+    & span {
+      @include font (50px, 50px, 400, -1.25px);
+      text-transform: uppercase;
+    }
+  }
+}
