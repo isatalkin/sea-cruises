@@ -2,24 +2,16 @@
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 0;
-  padding-bottom: 0;
   max-width: 620px;
 
   @media #{$tablet-widths} {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 0;
-    padding-bottom: 0;
-    max-width: 940px;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 720px;
   }
 
   @media #{$desktop-widths} {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 0;
-    padding-bottom: 0;
-    max-width: 940px;
+    max-width: 1140px;
   }
 }
 

@@ -8,6 +8,11 @@ body {
   @include font (14px, 24px, 400, 0.7px);
 }
 
+.wrapper {
+  @include container;
+  position: relative;
+}
+
 .button {
   display: block;
   width: 202px;
