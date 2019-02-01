@@ -13,63 +13,67 @@
 
   <header class="header">
 
-    <nav class="header__nav  nav">
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a class="nav__link" href="#">Популярные маршруты</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Расписание рейсов</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Забронированные рейсы</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Вход для партнеров</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">О компании</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Контакты</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="wrapper">
 
-    <form class="header__settings" action="#">
-      <label class="header__label" for="header__profile">Label</label>
-      <select class="header__select" name="profile" id="header__profile">
-        <option class="header__option" value="profile">Личный кабинет</option>
-        <option class="header__option" value="settings">Настройки</option>
-      </select>
-      <label class="header__label" for="header__currency">Label</label>
-      <select class="header__select" name="" id="header__currency">
-        <option class="header__option" value="ruble">Рубль</option>
-        <option class="header__option" value="dollar">Dollar</option>
-        <option class="header__option" value="euro">Euro</option>
-      </select>
-      <label class="header__label" for="header__language">Label</label>
-      <select class="header__select" name="" id="header__language">
-        <option class="header__option" value="ru">Ru</option>
-        <option class="header__option" value="eng">Eng</option>
-      </select>
-    </form>
+      <nav class="header__nav  nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">Популярные маршруты</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Расписание рейсов</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Забронированные рейсы</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Вход для партнеров</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">О компании</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
 
-    <p class="header__contact  contact">
-      <a class="contact__tel" href="#">8 800 500-61-05</a>
-      <span class="contact__tel-label">Круглосуточная поддержка</span>
-    </p>
+      <form class="header__settings" action="#">
+        <label class="header__label" for="header__profile">Label</label>
+        <select class="header__select" name="profile" id="header__profile">
+          <option class="header__option" value="profile">Личный кабинет</option>
+          <option class="header__option" value="settings">Настройки</option>
+        </select>
+        <label class="header__label" for="header__currency">Label</label>
+        <select class="header__select" name="" id="header__currency">
+          <option class="header__option" value="ruble">Рубль</option>
+          <option class="header__option" value="dollar">Dollar</option>
+          <option class="header__option" value="euro">Euro</option>
+        </select>
+        <label class="header__label" for="header__language">Label</label>
+        <select class="header__select" name="" id="header__language">
+          <option class="header__option" value="ru">Ru</option>
+          <option class="header__option" value="eng">Eng</option>
+        </select>
+      </form>
 
-    <section class="header__intro">
-      <div class="header__logo">
-        <img src="img/content/header-logo.png" alt="Logo">
-      </div>
-      <h1 class="header__title">Морские прогулки
-        <br>
-        <span>по Чёрному морю</span>
-      </h1>
-      <a class="header__button  button" href="#">Выбрать круиз</a>
-    </section>
+      <p class="header__contact  contact">
+        <a class="contact__tel" href="#">8 800 500-61-05</a>
+        <span class="contact__tel-label">Круглосуточная поддержка</span>
+      </p>
+
+      <section class="header__intro">
+        <div class="header__logo">
+          <img src="img/content/header-logo.png" alt="Logo">
+        </div>
+        <h1 class="header__title">Морские прогулки
+          <br>
+          <span>по Чёрному морю</span>
+        </h1>
+        <a class="header__button  button" href="#">Выбрать круиз</a>
+      </section>
+
+    </div>
 
   </header>
 
@@ -261,6 +265,8 @@
       </div>
     </div>
   </template>
+
+  <script src="js/main.min.js"></script>
 
 </body>
 

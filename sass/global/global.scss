@@ -16,6 +16,11 @@ img {
   height: auto;
 }
 
+.wrapper {
+  @include container;
+  position: relative;
+}
+
 .button {
   display: block;
   width: 202px;
