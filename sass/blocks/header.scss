@@ -1,24 +1,65 @@
 .header {
-  position: relative;
-  @include container;
   background-image: url('../img/header-bg--mobile.jpg');
   background-repeat: no-repeat;
   background-position: center top;
+
+  @media #{$tablet-widths} {
+    background-image: url('../img/header-bg--tablet.jpg');
+  }
+
+  @media #{$desktop-widths} {
+    background-image: url('../img/header-bg--desktop.jpg');
+  }
+
+  & .wrapper {
+    padding-top: 34px;
+  }
+
   &::after {
     position: absolute;
     content: '';
     width: 45px;
     height: 239px;
-    top: 400px;
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: -25px;
+    left: 41%;
     background-image: url('../img/svg-sprite/header-figure.svg');
     background-repeat: no-repeat;
     background-position: center top;
   }
 
+  &__burger {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: $charcoal;
+    border: 0;
+  }
+
   &__nav {
     display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 40px 20px;
+    background-color: $charcoal;
+
+    @media #{$tablet-widths} {
+      top: 65px;
+      width: 420px;
+      height: 413px;
+      padding: 50px 40px;
+    }
+  }
+
+  & .nav__link {
+    @include font (18px, 48px, 400, 0.9px);
+    color: $white;
+  }
+
+  &__nav--show {
+    display: block;
   }
 
   &__settings {
@@ -43,12 +84,14 @@
 
   &__title {
     font-family: $roboto-slab;
-    @include font (20px, 48px, 400, 1px);
+    @include font (20px, 1.5, 400, 1px);
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 39px;
 
-    & span {
-      @include font (50px, 50px, 400, -1.25px);
+    span {
+      display: block;
+      margin-top: 12px;
+      @include font (50px, 0.96, 400, -1.25px);
       text-transform: uppercase;
     }
   }

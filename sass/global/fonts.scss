@@ -1,7 +1,8 @@
 @font-face {
   font-weight: 400;
-  font-family: $roboto-slab;
+  font-family: 'Roboto Slab';
   font-style: normal;
+  font-display: swap;
   src:
     url("../fonts/RobotoSlab-Regular.woff2") format("woff2"),
     url("../fonts/RobotoSlab-Regular.woff") format("woff");
@@ -9,8 +10,9 @@
 
 @font-face {
   font-weight: 400;
-  font-family: $raleway;
+  font-family: 'Raleway';
   font-style: normal;
+  font-display: swap;
   src:
     url("../fonts/Raleway-Regular.woff2") format("woff2"),
     url("../fonts/Raleway-Regular.woff") format("woff");
@@ -18,8 +20,9 @@
 
 @font-face {
   font-weight: 700;
-  font-family: $raleway;
+  font-family: 'Raleway';
   font-style: normal;
+  font-display: swap;
   src:
     url("../fonts/Raleway-Bold.woff2") format("woff2"),
     url("../fonts/Raleway-Bold.woff") format("woff");
