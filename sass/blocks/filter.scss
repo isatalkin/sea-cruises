@@ -1,0 +1,17 @@
+.filter {
+  text-align: center;
+
+  &__label {
+    display: inline-block;
+  }
+
+  &__select {
+    display: inline-block;
+    display: none;
+    border: 0;
+  }
+
+  &__option {
+
+  }
+}

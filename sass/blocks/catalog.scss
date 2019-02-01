@@ -1,0 +1,14 @@
+.catalog {
+  padding-top: 39px;
+
+  &__title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+    @include font (20px, normal, 400, 2px);
+    text-align: center;
+  }
+
+  &__filter {
+    margin-bottom: 21px;
+  }
+}
