@@ -6,7 +6,7 @@
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "^1.0.0",
     "autoprefixer": "^8.3.0",
-    "browser-sync": "^2.24.7",
+    "browser-sync": "^2.26.3",
     "css-mqpacker": "^6.0.2",
     "del": "^3.0.0",
     "eslint": "^4.19.1",
@@ -28,7 +28,7 @@
     "gulp-uglify": "^3.0.0",
     "gulp-webp": "^3.0.0",
     "node-normalize-scss": "^8.0.0",
-    "stylelint": "^9.2.0",
+    "stylelint": "^9.10.1",
     "stylelint-config-htmlacademy": "^0.1.1"
   },
   "scripts": {
